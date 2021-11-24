@@ -30,6 +30,9 @@ function updateRate()
 function validateAmount()
 {
     let principal = document.getElementById("principal");
+    if(principalVal == "")
+        principalVal = 0;
+    
     principalVal = parseFloat(principal.value);
     if(principalVal <= 0)
     {
